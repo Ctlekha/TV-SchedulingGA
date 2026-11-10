@@ -101,7 +101,7 @@ st.sidebar.write("Elitism Size: 2")
 if st.button("Run Genetic Algorithm", type="primary"):
     try:
         ratings, slots = read_csv_to_dict(
-            "/content/program_ratings_modified.csv"
+            "program_ratings_modified.csv"
         )
         best, history = run_ga(ratings, slots, co_r, mut_r)
 
